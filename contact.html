@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Imbeko Travel & Hospitality</title>
+  <meta name="description" content="Get in touch with Imbeko Travel & Hospitality. We're here to help with all your travel needs, 24/7.">
+  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <i class="fas fa-phone-alt"></i>
+      <span>24/7 EMERGENCY SUPPORT: <a href="tel:+27728296138">072 8296 138</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Imbeko Travel & Hospitality">
+      </a>
+      
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="news.html">Travel Tips</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html" class="btn-login">Login</a>
+      </nav>
+      
+      <button class="mobile-menu-btn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Close menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">Travel Tips</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="hero-section" style="height: 500px;">
+    <div class="hero-slide active">
+      <img src="images/contact-hero.jpg" style="object-position: top;" alt="Contact Us">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-subtitle">Get in Touch</p>
+        <h1 class="hero-title">Contact <span class="highlight">Us</span></h1>
+        <p class="hero-description">We're here to help with all your travel needs. Reach out to us anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-content">
+      <div class="contact-info reveal-left">
+        <p class="section-label">Contact Information</p>
+        <h2>Let's Start a Conversation</h2>
+        <p>Whether you're planning a business trip, organizing a conference, or need assistance with your travel arrangements, our team is ready to help.</p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Office Address</h4>
+              <p>38119 Scenery Park, Phase 3<br>East London, 5252<br>South Africa</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h4>Phone Numbers</h4>
+              <p>Office: 043 050 5142<br>Emergency: 072 8296 138</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email Address</h4>
+              <p>General: info@imbeko.co.za<br>Bookings: bookings@imbeko.co.za</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Mon - Fri: 08:00 - 17:00<br>Sat: 09:00 - 13:00<br>24/7 Emergency Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-wrapper reveal-right">
+        <h3 style="font-size: 24px; margin-bottom: 30px; color: #1a1a1a;">Send Us a Message</h3>
+        
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+27 XX XXX XXXX">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="booking">Flight Booking</option>
+              <option value="hotel">Hotel Reservation</option>
+              <option value="corporate">Corporate Travel</option>
+              <option value="conference">Conference Management</option>
+              <option value="visa">Visa Services</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section style="height: 400px; background: #f5f5f5;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1234567890123!2d27.90123456789012!3d-33.01234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDAwJzQ0LjQiUyAyN8KwNTQnMDQuNCJF!5e0!3m2!1sen!2sza!4v1699999999999!5m2!1sen!2sza"
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <!-- Emergency Support Banner -->
+  <section class="cta-banner" style="background: #1a1a1a;">
+    <div class="cta-content reveal">
+      <div class="cta-text">
+        <h3><i class="fas fa-headset" style="margin-right: 10px;"></i> 24/7 Emergency Support</h3>
+        <p>Traveling and need immediate assistance? Our emergency support team is available around the clock.</p>
+      </div>
+      <a href="tel:0728296138" class="btn-gold">
+        <i class="fas fa-phone-alt"></i> Call Emergency Line
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="services-section" style="background: white;">
+    <div class="services-content" style="max-width: 900px;">
+      <div class="section-header reveal">
+        <p class="section-label">Common Questions</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="side-article reveal stagger-1" style="border-left: 4px solid #c41e3a; padding: 25px;">
+          <h4 style="font-size: 18px; margin-bottom: 10px;"><i class="fas fa-question-circle" style="color: #c41e3a; margin-right: 10px;"></i> How do I make a booking?</h4>
+          <p style="color: #666;">You can make a booking by contacting us via phone (043 050 5142), email (info@imbeko.co.za), or through this contact form. Our team will assist you with finding the best options for your travel needs.</p>
+        </div>
+        
+        <div class="side-article reveal stagger-2" style="border-left: 4px solid #c41e3a; padding: 25px;">
+          <h4 style="font-size: 18px; margin-bottom: 10px;"><i class="fas fa-question-circle" style="color: #c41e3a; margin-right: 10px;"></i> What payment methods do you accept?</h4>
+          <p style="color: #666;">We accept all major credit cards, EFT, and corporate account payments. For government clients, we work with official purchase orders and NT/CSD compliance.</p>
+        </div>
+        
+        <div class="side-article reveal stagger-3" style="border-left: 4px solid #c41e3a; padding: 25px;">
+          <h4 style="font-size: 18px; margin-bottom: 10px;"><i class="fas fa-question-circle" style="color: #c41e3a; margin-right: 10px;"></i> Can I make changes to my booking?</h4>
+          <p style="color: #666;">Yes, most bookings can be modified. Change fees may apply depending on the airline or hotel policy. Contact us as soon as possible to make changes - our 24/7 emergency line is available at 072 8296 138.</p>
+        </div>
+        
+        <div class="side-article reveal stagger-4" style="border-left: 4px solid #c41e3a; padding: 25px;">
+          <h4 style="font-size: 18px; margin-bottom: 10px;"><i class="fas fa-question-circle" style="color: #c41e3a; margin-right: 10px;"></i> Do you offer corporate accounts?</h4>
+          <p style="color: #666;">Yes, we offer comprehensive corporate travel management solutions with dedicated account managers, customized reporting, and preferential rates. Contact us for a corporate quote.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>IMBEKO TRAVEL & HOSPITALITY</h3>
+        <p>Pioneering travel and hospitality solutions for the African continent and beyond. Quality, Integrity, and Majesty.</p>
+        <p style="font-size: 13px; margin-top: 15px;">
+          <i class="fas fa-map-marker-alt"></i> 38119 Scenery Park, Phase 3, East London, 5252<br>
+          <i class="fas fa-phone"></i> 072 8296 138 / 043 050 5142<br>
+          <i class="fas fa-envelope"></i> info@imbeko.co.za
+        </p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="news.html">Travel Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links footer-contact">
+        <h4>We Love Socials</h4>
+        <ul>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </ul>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe for monthly travel hacks and policy updates.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 IMBEKO TRAVEL & HOSPITALITY (PTY) LTD. All Rights Reserved. Accredited by IATA & ASATA.</p>
+      
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/27728296138" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
