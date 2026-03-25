@@ -608,23 +608,6 @@ class HeaderScroll {
     }, { passive: true });
   }
 }
-// ============================================
-// PARTNER SLIDER
-// ============================================
-const sliderTrack = document.querySelector('.slider-track');
-
-// Only attach events if slider exists on this page
-if (sliderTrack) {
-  // Pause on hover (CSS handles this, but JS adds extra control)
-  sliderTrack.addEventListener('mouseenter', () => {
-    sliderTrack.style.animationPlayState = 'paused';
-    sliderTrack.style.animationDuration = '40s';
-  });
-
-  sliderTrack.addEventListener('mouseleave', () => {
-    sliderTrack.style.animationPlayState = 'running';
-  });
-}
 
 // ============================================
 // LAZY LOADING IMAGES
