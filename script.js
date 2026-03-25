@@ -1,7 +1,7 @@
 /**
  * IMBEKO TRAVEL & HOSPITALITY
  * Complete JavaScript with 3D Animations
- * Updated 2026
+ * Updated 2026 - FIXED VERSION
  */
 
 // ============================================
@@ -679,6 +679,24 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Initialize Lazy Loader
   new LazyLoader();
+
+  // ============================================
+  // PARTNER SLIDER - MOVED INSIDE DOMContentLoaded WITH NULL CHECK
+  // ============================================
+  const sliderTrack = document.querySelector('.slider-track');
+  
+  // Only attach events if slider exists on this page
+  if (sliderTrack) {
+    // Pause on hover (CSS handles this, but JS adds extra control)
+    sliderTrack.addEventListener('mouseenter', () => {
+      sliderTrack.style.animationPlayState = 'paused';
+      sliderTrack.style.animationDuration = '40s';
+    });
+
+    sliderTrack.addEventListener('mouseleave', () => {
+      sliderTrack.style.animationPlayState = 'running';
+    });
+  }
 
   // Add loaded class to body for initial animations
   document.body.classList.add('loaded');
