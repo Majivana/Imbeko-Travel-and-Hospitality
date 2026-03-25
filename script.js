@@ -617,21 +617,12 @@ class HeaderScroll {
   // Pause on hover (CSS handles this, but JS adds extra control)
   sliderTrack.addEventListener('mouseenter', () => {
     sliderTrack.style.animationPlayState = 'paused';
-  });
+    sliderTrack.style.animationDuration = '40s';
+});
 
   sliderTrack.addEventListener('mouseleave', () => {
     sliderTrack.style.animationPlayState = 'running';
   });
-
-  // Optional: Speed up on hover for better UX
-  sliderTrack.addEventListener('mouseenter', () => {
-    sliderTrack.style.animationDuration = '40s';
-  });
-
-  sliderTrack.addEventListener('mouseleave', () => {
-    sliderTrack.style.animationDuration = '20s';
-  });
-
 
 // ============================================
 // LAZY LOADING IMAGES
